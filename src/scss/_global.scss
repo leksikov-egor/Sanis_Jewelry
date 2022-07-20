@@ -1,0 +1,28 @@
+body {
+    @extend %i-500;
+    font-size: 20px;
+    line-height: 28px;
+    color: $black;
+
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 1610px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: block;
+    max-width: 150px;
+    background-color: $black;
+    color: $white;
+    padding: 10px 30px;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    @extend %m-600;
+}

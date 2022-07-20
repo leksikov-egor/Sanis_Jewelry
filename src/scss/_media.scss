@@ -1,0 +1,221 @@
+@media (max-width: 1500px) {
+    .headpresent {
+        &__item {
+            padding: 330px 80px;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .header {
+
+        &__top-inner {
+            max-width: 100%;
+        }
+
+        &__bottom-catalog {
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+
+    .headpresent {
+        &__item {
+            &--1 {
+                background-position: 18% 0%;
+
+                .headpresent__item-box {
+                    max-width: 540px;
+                    margin-right: auto;
+                    margin-left: 0;
+                }
+
+                .headpresent__text {
+                    font-size: 34px;
+                    line-height: 120%;
+                    @extend %i-300;
+                    color: $white;
+                }
+
+                .headpresent__btn {
+                    color: $white;
+                    border: 2px solid $white;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .header {
+        &__top {
+            padding-top: 30px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 123px;
+            bottom: 0;
+            z-index: 4;
+
+            font-size: 18px;
+            line-height: 22px;
+            transform: translateX(-100%);
+            transition: all .3s;
+            overflow-y: scroll;
+
+            &.active {
+                transform: translateY(0);
+            }
+        }
+
+        &__top-container {
+            flex-direction: column;
+            justify-content: start;
+        }
+
+        &__top-inner {
+            flex-direction: column;
+        }
+
+        &__top-menu {
+            flex-direction: column;
+        }
+
+        &__top-menu-item {
+            +.header__top-menu-item {
+                margin-top: 20px;
+            }
+        }
+
+        &__top-tel {
+            max-width: 100%;
+            margin-left: 0;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        &__top-map {
+            margin-bottom: 30px;
+        }
+
+        &__desc {
+            display: none;
+        }
+
+        &__top-menu {
+            max-width: 100%;
+        }
+
+        &__top-menu-item {
+            &--ghost {
+                display: block;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    cursor: pointer;
+                    right: 0;
+                    top: 0;
+                    width: 22px;
+                    height: 22px;
+                    background-image: url("../img/header/arrow-right.svg");
+                    background-repeat: no-repeat;
+                    transition: .3s;
+                }
+
+                &.active {
+                    &::after {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+        }
+
+        &__mid-mobile {
+            opacity: 1;
+            pointer-events: all;
+            max-width: 130px;
+        }
+
+        &__mid-move {
+            max-width: 130px;
+        }
+
+        &__mid-moveitem {
+            &--ghost {
+                display: none;
+            }
+        }
+
+        &__bottom {
+            display: none;
+        }
+    }
+
+}
+
+@media(max-width: 650px) {
+    .headpresent {
+        &__text{
+            font-size: 26px;
+            line-height: 110%;
+        }
+        &__item {
+            padding: 330px 10px 0 10px;
+            min-height: 600px;
+            &--1 {
+                background-image: url('../img/headpresent/item-mobile-1.jpg');
+            }
+        }
+        &__btn{
+            margin-top: 15px;
+        }
+        .slick-dots{
+            button{
+                width: 75px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        &__top {
+            padding-top: 30px;
+            top: 60px;
+        }
+
+        &__mid-burger {
+            margin-right: 0;
+        }
+
+        &__mid-mobile {
+            max-width: 55px;
+            justify-content: space-between;
+        }
+
+        &__mid-moveitem {
+            +.header__mid-moveitem {
+                margin-left: 0;
+            }
+        }
+
+        &__mid-move {
+            max-width: 55px;
+            justify-content: space-between;
+        }
+
+        &__mid-logo {
+            max-width: 63px;
+            max-height: 45px;
+        }
+
+        &__mid-container {
+            padding: 6px 10px;
+            border-top: 3px solid $black;
+        }
+    }
+}
