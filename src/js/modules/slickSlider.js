@@ -1,10 +1,10 @@
 const slickSlider = () => {
     $(function () {
-        $(".headpresent__box").on("init", function(event, slick){
+        $(".headpresent__box").on("init", function (event, slick) {
             $(".headpresent__slider-count").text(parseInt(slick.currentSlide + 1) + ' | ' + slick.slideCount);
         });
-        
-        $(".headpresent__box").on("afterChange", function(event, slick, currentSlide){
+
+        $(".headpresent__box").on("afterChange", function (event, slick, currentSlide) {
             $(".headpresent__slider-count").text(parseInt(slick.currentSlide + 1) + ' | ' + slick.slideCount);
         });
 
@@ -66,6 +66,20 @@ const slickSlider = () => {
                         autoplaySpeed: 2000,
                     }
                 },
+            ]
+        });
+
+        $('.treaty__box').slick({
+            mobileFirst: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 901,
+                    settings: "unslick"
+                }
             ]
         });
     });

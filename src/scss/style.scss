@@ -446,7 +446,6 @@
 }
 
 .cooperate {
-    padding-bottom: 200px;
     &__box {
         position: relative;
     }
@@ -491,7 +490,7 @@
 
     .slick-dots {
         position: absolute;
-        bottom: -20px;
+        bottom: -40px;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
@@ -518,6 +517,75 @@
         }
     }
 }
+
+.treaty {
+    padding-bottom: 200px;
+
+    &__box {
+        max-width: 1045px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        min-width: 0;
+        text-align: center;
+    }
+
+    &__item-num {
+        color: #BFBFBF;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 40px;
+        display: block;
+    }
+
+    &__item-img {
+        margin: 0 auto;
+    }
+
+    &__item-text {
+        font-size: 22px;
+        line-height: 27px;
+        margin: 25px 0 45px;
+    }
+
+    &__item-btn {
+        max-width: 216px;
+        margin: 0 auto;
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+
+        li {
+            margin: 0 6px;
+            line-height: 0;
+
+            &.slick-active {
+                button {
+                    opacity: 1;
+                }
+            }
+        }
+
+        button {
+            background: $dark;
+            opacity: 0.3;
+            border: none;
+            padding: 0;
+            font-size: 0;
+            width: 31px;
+            height: 2px;
+        }
+    }
+}
+
 
 
 
