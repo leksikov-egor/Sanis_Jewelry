@@ -1,14 +1,29 @@
+@media (max-width: 1750px) {
+    .cooperate {
+        .slick-prev {
+            left: 0;
+        }
+
+        .slick-next {
+            right: 0;
+        }
+    }
+}
+
 @media (max-width: 1500px) {
     .headpresent {
         &__item {
             padding: 330px 80px;
+        }
+
+        &__slider-count {
+            color: $white;
         }
     }
 }
 
 @media (max-width: 1250px) {
     .header {
-
         &__top-inner {
             max-width: 100%;
         }
@@ -20,7 +35,15 @@
     }
 
     .headpresent {
+        &__text {
+            font-size: 34px;
+            line-height: 120%;
+            font-weight: 300;
+            color: $white;
+        }
+
         &__item {
+
             &--1 {
                 background-position: 18% 0%;
 
@@ -28,13 +51,6 @@
                     max-width: 540px;
                     margin-right: auto;
                     margin-left: 0;
-                }
-
-                .headpresent__text {
-                    font-size: 34px;
-                    line-height: 120%;
-                    @extend %i-300;
-                    color: $white;
                 }
 
                 .headpresent__btn {
@@ -155,26 +171,42 @@
         }
     }
 
+    .headpresent {
+        &__slider-count {
+            display: none;
+        }
+    }
+
 }
 
 @media(max-width: 650px) {
+    .title {
+        font-size: 23px;
+        line-height: 120%;
+        margin: 45px 0;
+    }
+
     .headpresent {
-        &__text{
+        &__text {
             font-size: 26px;
             line-height: 110%;
         }
+
         &__item {
             padding: 330px 10px 0 10px;
             min-height: 600px;
+
             &--1 {
                 background-image: url('../img/headpresent/item-mobile-1.jpg');
             }
         }
-        &__btn{
+
+        &__btn {
             margin-top: 15px;
         }
-        .slick-dots{
-            button{
+
+        .slick-dots {
+            button {
                 width: 75px;
             }
         }
@@ -216,6 +248,23 @@
         &__mid-container {
             padding: 6px 10px;
             border-top: 3px solid $black;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .cooperate{
+        &__item{
+            width: 280px !important;
+        }
+    }
+}
+
+@media (max-height: 800px) and (min-width: 1000px) {
+    .headpresent {
+        &__item {
+            padding: 210px 80px;
+            min-height: 600px;
         }
     }
 }
