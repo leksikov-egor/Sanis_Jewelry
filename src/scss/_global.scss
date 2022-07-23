@@ -1,3 +1,9 @@
+body,
+html,
+main,
+.container{
+    height: 100%;
+}
 body {
     @extend %i-500;
     font-size: 20px;

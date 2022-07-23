@@ -203,6 +203,22 @@
             }
         }
     }
+    .banner{
+        &__link{
+            margin: 0 auto;
+            display: block;
+            max-width: 335px;
+        }
+        &__img{
+            &--pc{
+                display: none;
+            }
+            &--mob{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
 }
 
 @media(max-width: 650px) {

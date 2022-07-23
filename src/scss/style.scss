@@ -735,6 +735,16 @@
     }
 }
 
+.banner {
+    margin-top: 120px;
+
+    &__img {
+        &--mob {
+            display: none;
+        }
+    }
+}
+
 
 
 
