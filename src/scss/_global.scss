@@ -23,6 +23,7 @@ body {
     padding: 10px 30px;
     font-size: 10px;
     line-height: 20px;
+    text-transform: uppercase;
     text-align: center;
     @extend %m-600;
 }
@@ -30,6 +31,7 @@ body {
 .title {
     font-size: 30px;
     line-height: 120%;
+    text-transform: uppercase;
     @extend %i-600;
     color: $dark;
     margin: 110px auto 60px;

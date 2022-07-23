@@ -10,6 +10,18 @@
     }
 }
 
+@media (max-width: 1700px) {
+    .novelty{
+        .slick-prev {
+            left: 0;
+        }
+    
+        .slick-next {
+            right: 0;
+        }
+    }
+}
+
 @media (max-width: 1500px) {
     .headpresent {
         &__item {
@@ -274,6 +286,13 @@
         &__mid-container {
             padding: 6px 10px;
             border-top: 3px solid $black;
+        }
+    }
+    .novelty{
+        .product-card{
+            &__img{
+                min-height: auto;
+            }
         }
     }
 }

@@ -82,6 +82,36 @@ const slickSlider = () => {
                 }
             ]
         });
+
+        $('.novelty__box').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            prevArrow: `<button type="button" class="slick-arrow slick-prev"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1L2 8L9 15" stroke="white" stroke-width="2"/><path d="M3 8H17" stroke="white" stroke-width="2"/></svg></button>`,
+            nextArrow: `<button type="button" class="slick-arrow slick-next"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 1L15 8L8 15" stroke="white" stroke-width="2"/><path d="M14 8H0" stroke="white" stroke-width="2"/></svg></button>`,
+            responsive: [
+                {
+                    breakpoint: 1701,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 1301,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 901,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: false,
+                        dots: true
+                    }
+                }
+            ]
+        });
     });
 };
 
