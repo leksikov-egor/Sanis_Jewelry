@@ -22,6 +22,7 @@
     "@babel/polyfill": "latest",
     "@babel/preset-env": "latest",
     "@babel/preset-react": "^7.18.6",
+    "@fancyapps/ui": "^4.0.29",
     "babel-loader": "latest",
     "browser-sync": "latest",
     "core-js": "^3.23.4",

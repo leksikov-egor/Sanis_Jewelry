@@ -4,6 +4,7 @@
 import $ from "jquery";
 window.$ = $;
 import 'slick-carousel';
+import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 
 import * as flsFunctions from './modules/functions.js';
 import burger from './modules/burger.js';
