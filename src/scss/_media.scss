@@ -20,6 +20,25 @@
             right: 0;
         }
     }
+    .catalog-preview{
+        &__box{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__item{
+            min-height: 350px;
+            &--1{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                img{
+                    max-width: 330px;
+                    margin-top: 20px;
+                }
+            }
+            &--5{
+                grid-column: 1/2;
+            }
+        }
+    }
 }
 
 @media (max-width: 1500px) {
@@ -190,7 +209,35 @@
     }
 
 }
-
+@media (max-width: 800px) {
+    .catalog-preview{
+        &__tags{
+            display: none;
+        }
+        &__box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__btn{
+            max-width: 180px;
+        }
+        &__item{
+            max-width: 200px;
+            width: 100%;
+            min-height: 270px;
+            justify-content: end;
+            &--1{
+                img{
+                    max-width: 180px;
+                }
+            }
+        }
+        &__img{
+            max-width: 180px;
+        }
+    }
+} 
 @media (max-width: 700px) {
     .production {
         &__video-img {
@@ -311,12 +358,53 @@
             }
         }
     }
+    .catalog-preview{
+        &__item{
+            max-width: 130px;
+            min-height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+            &--1{
+                img{
+                    max-width: 120px;
+                }
+            }
+            &--11{
+                display: none;
+            }
+        }
+        &__img{
+            max-width: 120px;
+        }
+        &__item-name{
+            padding: 0;
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            top: auto;
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
 }
 
 @media (max-width: 400px) {
     .cooperate {
         &__item {
             width: 280px !important;
+        }
+    }
+    .catalog-preview{
+        &__btn{
+            max-width: 100%;
+            color: $black;
+            background-color: $white;
+            border: 2px solid $black;
+            margin-top: 20px;
+            padding: 8px 10px;
         }
     }
 }
