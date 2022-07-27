@@ -234,7 +234,8 @@
                     <div class="catalog-preview__item catalog-preview__item--1">
                         <a class="catalog-preview__item-link" href="">
                             <p class="catalog-preview__item-name">Колье</p>
-                            <img class="catalog-preview__img catalog-preview__img" src="@img/catalog-preview/1.png" alt="">
+                            <img class="catalog-preview__img catalog-preview__img" src="@img/catalog-preview/1.png"
+                                alt="">
                         </a>
                     </div>
                     <div class="catalog-preview__item catalog-preview__item--2">
@@ -323,6 +324,28 @@
                 <a class="catalog-preview__btn btn" href="">ПОКАЗАТЬ ВСЕ</a>
             </div>
         </section>
+        <section class="map">
+            <div class="container">
+                <h1 class="title">АДРЕСА</h1>
+                <div class="map-tabs">
+                    <div class="map-tabs__nav">
+                        <button class="map-tabs__nav-btn active" type="button" data-tab="#tab1">Магазины</button>
+                        <button class="map-tabs__nav-btn" type="button" data-tab="#tab2">Офисы</button>
+                    </div>
+                    <div class="map-tabs__content">
+                        <div class="map-tabs__content-item active" id="tab1">
+                            <iframe src="https://my.atlistmaps.com/map/aed3e3d1-c565-4fd2-b404-6a81f5ffe347?share=true" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                        </div>
+                        <div class="map-tabs__content-item" id="tab2">
+                            <iframe src="https://my.atlistmaps.com/map/f33cfc52-bf36-46b9-a246-93820b377272?share=true" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
     </main>
 
     @@include('html/footer.html', {})

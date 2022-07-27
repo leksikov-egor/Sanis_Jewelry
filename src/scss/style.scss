@@ -859,6 +859,39 @@
     }
 }
 
+.map-tabs {
+
+    &__nav {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    &__nav-btn {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0 8px;
+        font-size: 24px;
+        line-height: 29px;
+        @extend %i-300;
+        cursor: pointer;
+
+        &.active {
+            @extend %i-500;
+            border-bottom: 2px solid $black;
+        }
+    }
+
+    &__content-item {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}
+
+
 
 
 
