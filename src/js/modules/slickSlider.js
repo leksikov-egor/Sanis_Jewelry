@@ -112,6 +112,39 @@ const slickSlider = () => {
                 }
             ]
         });
+
+        $('.news__box').slick({
+            mobileFirst: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            prevArrow: `<button type="button" class="slick-arrow slick-prev"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1L2 8L9 15" stroke="black" stroke-width="2"/><path d="M3 8H17" stroke="black" stroke-width="2"/></svg></button>`,
+            nextArrow: `<button type="button" class="slick-arrow slick-next"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 1L15 8L8 15" stroke="black" stroke-width="2"/><path d="M14 8H0" stroke="black" stroke-width="2"/></svg></button>`,
+            responsive: [
+                {
+                    breakpoint: 1601,
+                    settings: "unslick"
+                },
+                {
+                    breakpoint: 1201,
+                    settings: {
+                        slidesToShow: 3,
+                        arrows: true,
+                        dots: false,
+                    }
+                },
+                {
+                    breakpoint: 851,
+                    settings: {
+                        slidesToShow: 2,
+                        arrows: true,
+                        dots: false,
+                    }
+                }
+            ]
+        });
     });
 };
 
