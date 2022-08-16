@@ -1,11 +1,16 @@
-const spoiler = () => {
-    const btnTrigger = document.querySelector('.header__top-menu-item--ghost');
-    const content = document.querySelector('.header__mobile-catalog');
+const spoiler = (trigger, wrapper) => {
+    const btnTriggers = document.querySelectorAll(trigger);
 
-    btnTrigger.addEventListener('click', (e) => {
-        e.preventDefault();
-        btnTrigger.classList.toggle('active');
-        content.classList.toggle('active');
+
+    btnTriggers.forEach(el => {
+        el.addEventListener('click', (e) => {
+            e.preventDefault();
+            const self = e.currentTarget;
+            const content = self.parentElement.querySelector(wrapper);
+            
+            self.classList.toggle('active');
+            content.classList.toggle('active');
+        });
     });
 };
 

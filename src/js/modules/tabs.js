@@ -1,6 +1,6 @@
-const tabs = () => {
-    const tabsBtn = document.querySelectorAll('.map-tabs__nav-btn');
-    const tabsItems = document.querySelectorAll('.map-tabs__content-item');
+const tabs = (trigger, content) => {
+    const tabsBtn = document.querySelectorAll(trigger);
+    const tabsItems = document.querySelectorAll(content);
 
     tabsBtn.forEach(function (item) {
         item.addEventListener('click', function () {
